@@ -1,6 +1,39 @@
 .App {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.Routes {
+	&__header {
+		width: 100%;
+	}
+	padding: 0 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
 }
 
 .Route {
 	cursor: pointer;
+	list-style-type: none;
+	min-width: 15rem;
+	border: 1px solid;
+	border-radius: 5px;
+	text-align: center;
+	padding: 0.25rem;
+	color: white;
+	font-weight: 500;
+
+	&:hover {
+		background-color: rgba($color: black, $alpha: 0.25);
+	}
+}
+
+.Stops {
+	padding: 0 1rem;
+}
+
+.Stop {
+	margin-left: 1rem;
+	list-style-type: circle;
 }
